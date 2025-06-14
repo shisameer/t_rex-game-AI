@@ -1,0 +1,22 @@
+[NEAT]
+pop_size           = 100
+fitness_threshold  = 1000
+reset_on_extinction= False
+
+[DefaultGenome]
+num_inputs         = 4
+num_outputs        = 3
+weight_mutate_rate = 0.8
+add_conn_prob      = 0.05
+add_node_prob      = 0.03
+
+[DefaultSpeciesSet]
+compatibility_threshold = 3.0
+
+[DefaultStagnation]
+species_fitness_func = max
+max_stagnation       = 15
+
+[DefaultReproduction]
+elitism            = 2
+survival_threshold = 0.2
